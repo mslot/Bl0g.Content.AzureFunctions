@@ -11,6 +11,18 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Bl0g.Content.Communication.Clients.Interfaces\Bl0g.Content.Communication.Clients.Interfaces.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Communication.Clients\Bl0g.Content.Communication.Clients.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Communication.Core.Shared\Bl0g.Content.Communication.Core.Shared.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Communication.Interfaces\Bl0g.Content.Communication.Interfaces.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Communication\Bl0g.Content.Communication.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Jobs.Interfaces\Bl0g.Content.Jobs.Interfaces.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Jobs\Bl0g.Content.Jobs.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Workers.Core.Shared\Bl0g.Content.Workers.Core.Shared.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Workers.Interfaces\Bl0g.Content.Workers.Interfaces.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Workers\Bl0g.Content.Workers.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

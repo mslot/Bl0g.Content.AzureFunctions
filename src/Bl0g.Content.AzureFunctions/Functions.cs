@@ -18,5 +18,12 @@ namespace Bl0g.Content.AzureFunctions
             _options = options;
         }
 
+        [FunctionName("CommitTrigger")]
+        public void CommitTrigger(
+            [QueueTrigger("commit-queue")] string myQueueItem,
+            ILogger log)
+        {
+            log.LogInformation($"C# function processed: {myQueueItem}");
+        }
     }
 }

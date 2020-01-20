@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bl0g.Content.Jobs.Interfaces\Bl0g.Content.Jobs.Interfaces.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Workers.Core.Shared\Bl0g.Content.Workers.Core.Shared.csproj" />
+    <ProjectReference Include="..\Bl0g.Content.Workers.Interfaces\Bl0g.Content.Workers.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
