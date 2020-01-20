@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "Bl0g.Content.AzureFunctions": {
+      "commandName": "Project",
+      "environmentVariables": {
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 31110,
+      "useSSL": false
+    }
+  }
+}
