@@ -1,4 +1,5 @@
 using System;
+using Bl0g.Content.Communication.Core.Shared;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
@@ -20,10 +21,10 @@ namespace Bl0g.Content.AzureFunctions
 
         [FunctionName("CommitTrigger")]
         public void CommitTrigger(
-            [QueueTrigger("commit-queue")] string myQueueItem,
+            [QueueTrigger("commit-queue")] FilesGetRequest filesGetRequest,
             ILogger log)
         {
-            log.LogInformation($"C# function processed: {myQueueItem}");
+
         }
     }
 }
